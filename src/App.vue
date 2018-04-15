@@ -24,7 +24,7 @@ hr {
       <v-toolbar app>
         <v-toolbar-title>
           Comparateur de tarifs d'électricité
-          <span v-if="$vuetify.breakpoint.smAndUp"> en France, indépendant et participatif</span>
+          <span v-if="$vuetify.breakpoint.mdAndUp"> en France, indépendant et participatif</span>
         </v-toolbar-title>
       </v-toolbar>
       <v-content>
@@ -52,7 +52,7 @@ hr {
                         <v-flex xs12 sm6>
                           <p>Ce comparateur a été entièrement créé sur le temps libre de <a href="https://www.maccagnoni.eu/" target="_blank">Sébastien Maccagnoni</a>, qui n'a aucun intérêt financier dans aucun des fournisseurs d'accès cités. Informaticien, curieux et aimant les comparatifs, Sébastien créait tous les ans des tableaux afin de comparer le tarif qu'il paye à ce qu'il pourrait payer ailleurs. Dans un esprit de partage et pour exercer sa passion du développement pour un projet sympa, il a décidé de créer ce comparateur.</p>
                           <p>Attention: ce comparateur ne prend en compte que les offres électricité seules: aucune offre électricité+gaz n'est traitée. Les liens du tableau comparatif n'offrent aucune réduction d'aucune sorte, chez aucun fournisseur.</p>
-                          <p>Sébastien a choisi de n'afficher aucune publicité sur ce site&nbsp;: celui-ci ne lui apporte aucune rémunération directe.</p>
+                          <p>Sébastien a choisi de n'afficher aucune publicité sur ce site&nbsp;: celui-ci ne lui apporte aucune rémunération directe. Si vous trouvez ce comparateur utile et que vous souhaitez récompenser Sébastien, vous pouvez faire lui faire un don via <a href="https://www.tipeee.com/smacc">Tipeee</a>.</p>
                           <p><b>Sébastien a choisi de s'abonner au fournisseur Ilek. Si vous souhaitez suivre son choix, n'hésitez pas à passer par <a href="https://www.ilek.fr/ambassadors/88cc8848-ab5d-4c9c-a3a1-88d8de5a1cb3?referral=ILEK10995" target="_blank">ce lien de parrainage</a>&nbsp;: vos premiers 100 kWh seront offerts.</b></p>
                         </v-flex>
                         <v-flex xs12 sm6>
@@ -266,20 +266,21 @@ hr {
       <v-menu top offset-y transition="slide-y-reverse-transition">
         <v-btn color="info" slot="activator">Participer</v-btn>
         <v-list light>
-          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=erreur">
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=erreur" target="_blank">
             <v-list-tile-title>Signaler une erreur</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=nouveau_fournisseur">
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=nouveau_fournisseur" target="_blank">
             <v-list-tile-title>Proposer un nouveau fournisseur</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=nouveau_tarif">
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=nouveau_tarif" target="_blank">
             <v-list-tile-title>Signaler un changement de tarif</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=amelioration">
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=amelioration" target="_blank">
             <v-list-tile-title>Suggérer une amélioration</v-list-tile-title>
           </v-list-tile>
         </v-list>
       </v-menu>
+      <v-btn color="info" href="https://www.tipeee.com/smacc" target="_blank">Faire un don</v-btn>
     </v-footer>
       <v-snackbar color="error" :timeout="6000" top v-model="erreurChargementYaml">
         La liste de tarifs n'a pas pu être chargée. Veuillez réessayer.
