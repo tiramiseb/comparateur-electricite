@@ -28,7 +28,7 @@ hr {
       </v-toolbar-title>
     </v-toolbar>
     <v-content>
-      <v-container>
+      <v-container grid-list-sm>
         <v-alert type="warning" :value="problemesOffres.length>0" class="mb-3">
           <p>Problème<span v-if="problemesOffres.length>1">s</span> dans le fichier des tarifs&nbsp;:</p>
           <ul>
