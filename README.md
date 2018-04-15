@@ -16,10 +16,15 @@ $ yarn install
 $ yarn build
 ```
 
+Pour servir le site avec GitHub Pages :
+
+```
+yarn build --dest docs
+```
+
 ## Serveur local pour développement
 
 ```
 $ yarn install
 $ yarn serve
 ```
-
