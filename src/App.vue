@@ -21,242 +21,242 @@ hr {
 </style>
 <template>
   <v-app dark>
-      <v-toolbar app>
-        <v-toolbar-title>
-          Comparateur de tarifs d'électricité
-          <span v-if="$vuetify.breakpoint.mdAndUp"> en France, indépendant et participatif</span>
-        </v-toolbar-title>
-      </v-toolbar>
-      <v-content>
-        <v-container>
-          <v-alert type="warning" :value="problemesOffres.length>0" class="mb-3">
-            <p>Problème<span v-if="problemesOffres.length>1">s</span> dans le fichier des tarifs&nbsp;:</p>
-            <ul>
-              <li v-for="probleme in problemesOffres" :key="probleme">
-                {{ probleme }}
-              </li>
-            </ul>
-          </v-alert>
-          <v-expansion-panel expand light>
-            <v-expansion-panel-content>
-              <div slot="header">
-                <v-icon>help</v-icon>
-                Aide
-              </div>
-              <v-container grid-list-md>
-                <v-layout row wrap>
-                  <v-flex xs12 class="intro">
-                    <h2>Qui, quoi, comment ?</h2>
-                    <v-container grid-list-lg>
-                      <v-layout row wrap>
-                        <v-flex xs12 sm6>
-                          <p>Ce comparateur a été entièrement créé sur le temps libre de <a href="https://www.maccagnoni.eu/" target="_blank">Sébastien Maccagnoni</a>, qui n'a aucun intérêt financier dans aucun des fournisseurs d'accès cités. Informaticien, curieux et aimant les comparatifs, Sébastien créait tous les ans des tableaux afin de comparer le tarif qu'il paye à ce qu'il pourrait payer ailleurs. Dans un esprit de partage et pour exercer sa passion du développement pour un projet sympa, il a décidé de créer ce comparateur.</p>
-                          <p>Attention: ce comparateur ne prend en compte que les offres électricité seules: aucune offre électricité+gaz n'est traitée. Les liens du tableau comparatif n'offrent aucune réduction d'aucune sorte, chez aucun fournisseur.</p>
-                          <p>Sébastien a choisi de n'afficher aucune publicité sur ce site&nbsp;: celui-ci ne lui apporte aucune rémunération directe. Si vous trouvez ce comparateur utile et que vous souhaitez récompenser Sébastien, vous pouvez faire lui faire un don via <a href="https://www.tipeee.com/smacc">Tipeee</a>.</p>
-                          <p><b>Sébastien a choisi de s'abonner au fournisseur Ilek. Si vous souhaitez suivre son choix, n'hésitez pas à passer par <a href="https://www.ilek.fr/ambassadors/88cc8848-ab5d-4c9c-a3a1-88d8de5a1cb3?referral=ILEK10995" target="_blank">ce lien de parrainage</a>&nbsp;: vos premiers 100 kWh seront offerts.</b></p>
-                        </v-flex>
-                        <v-flex xs12 sm6>
-                          <p>L'intérêt de ce comparateur, en face d'autres outils du même genre, est multiple&nbsp;:</p>
-                          <ul>
-                            <li>l'ensemble des tarifs sont manuellement vérifiés et mis à jour, au moins une fois par an, sur la base des tarifs officiels des fournisseurs&nbsp;;</li>
-                            <li>les tarifs proposés sont comparés en une seule page, un grand tableau concis et complet&nbsp;;</li>
-                            <li>l'ensemble des calculs sont effectués sur votre propre machine: aucune information n'est transmise au serveur, aucun cookie n'est installé, aucun "flicage" n'est possible&nbsp;;</li>
-                            <li>vous pouvez comparer les tarifs avec votre facture actuelle&nbsp;;</li>
-                            <li>si vous avez des idées ou des besoins, vous pouvez les soumettre &mdash; de même, si vous voulez participer, c'est possible, cherchez le menu en bas de l'écran pour en savoir plus&nbsp;!</li>
-                          </ul>
-                        </v-flex>
-                      </v-layout>
-                    </v-container>
-                  </v-flex>
-                  <v-divider light />
-                  <v-flex xs12 md6>
-                    <h2>Les paramètres</h2>
-                    <p>La section "Paramètres" vous permet de renseigner votre consommation afin de pouvoir calibrer le comparateur.</p>
-                    <p>Tout d'abord, indiquez votre type d'abonnement: tarif unique, HP/HC ou tempo (le comparateur ne prend pas en compte le tarif EJP)&nbsp;; ensuite, précisez la puissance nécessaire en kVA&nbsp;; enfin, renseignez votre consommation annuelle en kWh dans la colonne "Consommation annuelle".</p>
-                    <p>Le champ "Facture actuelle annuelle" et la section "Prix actuel du kWh" permettent de comparer précisément votre abonnement actuel avec les offres connues du comparateur. Ceux-ci sont facultatifs.</p>
-                    <h3>Options</h3>
-                    <dl>
-                      <dt>Inclure tarifs base</dt>
-                      <dd>Afficher les offres avec un seul tarif quel que soit le moment de la journée.</dd>
-                      <dt>Inclure tarifs heures pleines / heures creuses</dt>
-                      <dd>Afficher les offres proposant un double tarif heures pleines / heures creuses.</dd>
-                      <dt>Inclure tarifs tempo</dt>
-                      <dd>Afficher les offres proposant six tarifs (jours bleu/blanc/rouge, heures pleines ou creuses).</dd>
-                      <dt>Inclure anciens tarifs</dt>
-                      <dd>Afficher les tarifs anciens (plus vieux qu'un an, généralement des offres non reconduites).</dd>
-                      <dt>Voiture électrique : prix/100km</dt>
-                      <dd>Afficher une estimation du prix de l'électricité pour 100km parcourus en voiture électrique.</dd>
-                      <dt>Consommation moyenne de votre voiture</dt>
-                      <dd>Consommation en kWh aux 100km de votre voiture électrique (si vous ne savez pas, 16kWh/100 serait un bon point de départ)&nbsp;; cette consommation est automatiquement majorée de 15% pour prendre en compte le rendement du chargeur.</dd>
-                    </dl>
-                  </v-flex>
-                  <v-flex xs12 md6>
-                    <h2>Le comparatif</h2>
-                    <dl>
-                      <dt>Date tarif</dt>
-                      <dd>Date à laquelle le tarif a été consulté sur le site web du fournisseur</dd>
-                      <dt>Offre</dt>
-                      <dd>Fournisseur et nom de l'offre</dd>
-                      <dt>Type</dt>
-                      <dd>Type de l'offre (base, HP/HC ou tempo)</dd>
-                      <dt>Total</dt>
-                      <dd>Coût annuel avec l'offre, pour la consommation renseignée dans les paramètres</dd>
-                      <dt>HP</dt>
-                      <dd>Coût d'un kWh en heures pleines (coût unique pour un tarif "base", ou coût moyen pour un tarif tempo)</dd>
-                      <dt>HC</dt>
-                      <dd>Coût d'un kWh en heures creuses (inapplicable pour un tarif "base", coût moyen pour un tarif tempo)</dd>
-                      <dt>Abo</dt>
-                      <dd>Coût de l'abonnement annuel</dd>
-                      <dt>VE HP (optionnel)</dt>
-                      <dd>Coût pour 100km parcourus avec une voiture électrique chargée en heures pleines</dd>
-                      <dt>VE HC (optionnel)</dt>
-                      <dd>Coût pour 100km parcourus avec une voiture électrique chargée en heures creuses</dd>
-                      <dt>Delta (optionnel)</dt>
-                      <dd>Différence (en pourcents) entre votre tarif total actuel et le tarif affiché</dd>
-                    </dl>
-                    <hr />
-                    <ul>
-                      <li>Tous les prix annoncés sont TTC</li>
-                      <li>Les lignes en rouge représentent des tarifs anciens, généralement à ignorer</li>
-                      <li>Les offres sur fond vert clair sont des offres "énergie 100% renouvelable"</li>
-                      <li>Les offres sur fond vert foncé sont des offres "renouvelable et local", permettant un "circuit court"</li>
-                      <li>Lorsque des offres sont complexes (offres "week-end" par exemple), le simulateur répartit les consommations de manière lissée, comme si vous consommiez autant à tous les moments &mdash; bien sûr, si vous avez précisé vos consommations HP et HC, celles-ci restent prises en compte.</li>
-                    </ul>
-                  </v-flex>
-                </v-layout>
-                <v-layout row>
-                  <v-flex xs12>
-                    <h2>Revenir sur le comparateur</h2>
-                    <p>Pour revenir sur le comparateur en gardant vos paramètres, enregistez simplement l'adresse courante dans vos marque-pages, celle-ci change selon vos paramètres. Actuellement, l'adresse à utiliser pour revenir avec vos paramètres est la suivante&nbsp;:</p>
-                    <p><a :href="adresseActuelle">{{ adresseActuelle }}</a></p>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-expansion-panel-content>
-            <v-expansion-panel-content value="true">
-              <div slot="header">
-                <v-icon>settings</v-icon>
-                Paramètres
-              </div>
-              <v-container grid-list-lg class="px-4">
-                <v-layout row wrap>
-                  <v-flex xs12 md4>
-                    <v-subheader light>Abonnement</v-subheader>
-                    <v-select light :items="types" v-model="params.type" label="Type d'abonnement" single-line />
-                    <v-select light :items="puissances" v-model="params.puissance" label="Puissance" single-line />
-                    <v-text-field light type="number" label="Facture actuelle annuelle (facultatif)" v-model.number="params.total" suffix="€/an" min="0" />
-                    <v-subheader light>Options</v-subheader>
-                    <v-checkbox light label="Inclure tarifs base" v-model="params.base" />
-                    <v-checkbox light label="Inclure tarifs heures pleines / heures creuses" v-model="params.hphc" />
-                    <v-checkbox light label="Inclure tarifs tempo" v-model="params.tempo" />
-                    <v-checkbox light label="Uniquement électricité renouvelable" v-model="params.renouvelable" />
-                    <v-checkbox light label="Uniquement production locale" v-model="params.local" />
-                    <v-checkbox light label="Inclure anciens tarifs" v-model="params.anciens" />
-                    <v-container class="pa-0">
-                      <v-layout row wrap>
-                        <v-flex xs12>
-                          <v-checkbox  light label="Voiture électrique : prix/100km" v-model="params.ve" />
-                        </v-flex>
-                        <v-flex xs12>
-                          <v-text-field light type="number" label="Consommation moyenne de votre voiture" v-model.number="params.consove" suffix="kWh/100km" hint="Sera majorée de 15% (rendement du chargeur)" min="0" v-if="params.ve" />
-                        </v-flex>
-                      </v-layout>
-                    </v-container>
-                  </v-flex>
-                  <v-flex xs12 md4>
-                    <v-subheader light>Consommation annuelle</v-subheader>
-                    <v-text-field light type="number" :label="labelHP" v-model.number="params.conso" suffix="kWh/an" min="0" />
-                    <v-text-field light type="number" :label="labelHC" v-model.number="params.consohc" suffix="kWh/an" min="0" v-if="params.type=='hphc' || params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures pleines jours blancs" v-model.number="params.consohpbc" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures creuses jours blancs" v-model.number="params.consohcbc" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures pleines jours rouges" v-model.number="params.consohprg" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures creuses jours rouges" v-model.number="params.consohcrg" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
-                  </v-flex>
-                  <v-flex xs12 md4>
-                    <v-subheader light>Prix actuel du kWh (facultatif)</v-subheader>
-                    <v-text-field light type="number" :label="labelHP" v-model.number="params.tarif" suffix="cts/kWh" min="0" />
-                    <v-text-field light type="number" :label="labelHC" v-model.number="params.tarifhc" suffix="cts/kWh" min="0" v-if="params.type=='hphc' || params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures pleines jours blancs" v-model.number="params.tarifhpbc" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures creuses jours blancs" v-model.number="params.tarifhcbc" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures pleines jours rouges" v-model.number="params.tarifhprg" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
-                    <v-text-field light type="number" label="Heures creuses jours rouges" v-model.number="params.tarifhcrg" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-expansion-panel-content>
-            <v-expansion-panel-content value="true">
-              <div slot="header">
-                <v-icon>search</v-icon>
-                Comparatif
-              </div>
-              <v-data-table
-                light
-                hide-actions
-                must-sort
-                :headers="headers"
-                :items="fournisseurs"
-                :pagination.sync="ordre"
-                no-data-text="Aucune donnée correspondante"
-                no-results-text="Aucun résultat correspondant"
-                transition="slide-y-transition"
-              >
-                <template slot="items" slot-scope="props" transition="slide-y-transition">
-                  <td :class="{'red--text': props.item.vieuxTarif}">
-                    {{ props.item.date }}
-                  </td>
-                  <td :class="{
-                    'red--text': props.item.vieuxTarif,
-                    'green': props.item.renouvelable,
-                    'teal': props.item.local&&!props.item.renouvelable,
-                    'accent-1': (props.item.renouvelable&&!props.item.local)||(!props.item.renouvelable&&props.item.local),
-                    'accent-2': props.item.renouvelable&&props.item.local
-                  }">
-                    <v-tooltip :disabled="!props.item.note" bottom max-width="500" open-delay="0" close-delay="500">
-                      <span slot="activator">
-                        <span v-if="!props.item.url">{{ props.item.offre }}</span>
-                        <a :href="props.item.url" target="_blank" v-if="props.item.url">{{ props.item.offre }}</a>
-                        <v-icon light small class="ml-2" v-if="props.item.note">help</v-icon>
-                      </span>
-                      <span v-html="props.item.note" />
-                    </v-tooltip>
-                  </td>
-                  <td :class="{
-                    'green': props.item.renouvelable,
-                    'teal': props.item.local&&!props.item.renouvelable,
-                    'accent-1': (props.item.renouvelable&&!props.item.local)||(!props.item.renouvelable&&props.item.local),
-                    'accent-2': props.item.renouvelable&&props.item.local
-                  }">
-                    {{ humanType(props.item.type) }}
-                  </td>
-                  <td class="text-xs-right">
-                    <b>{{ props.item.total.toFixed(2).replace(".", ",") }}&nbsp;€</b>
-                  </td>
-                  <td class="text-xs-right">
-                    {{ props.item.hp.toFixed(2).replace(".", ",") }}&nbsp;cts
-                  </td>
-                  <td class="text-xs-right">
-                    <span v-if="props.item.type == 'hphc' || props.item.type == 'tempo'">{{ props.item.hc.toFixed(2).replace(".", ",") }}&nbsp;cts</span>
-                  </td>
-                  <td class="text-xs-right">
-                    {{ props.item.abo.toFixed(2).replace(".", ",") }}&nbsp;€
-                  </td>
-                  <td class="text-xs-right" v-if="params.ve">
-                    {{ props.item.vehp.toFixed(2).replace(".", ",") }}&nbsp;€
-                  </td>
-                  <td class="text-xs-right" v-if="params.ve">
-                    <span v-if="props.item.type == 'hphc' || props.item.type == 'tempo'">{{ props.item.vehc.toFixed(2).replace(".", ",") }}&nbsp;€</span>
-                  </td>
-                  <td class="text-xs-right" v-if="params.total">
-                    <span v-if="props.item.delta<0" class="success--text">{{ props.item.delta.toFixed(2).replace(".", ",") }}&nbsp;%</span>
-                    <span v-if="props.item.delta>0" class="error--text">+{{ props.item.delta.toFixed(2).replace(".", ",") }}&nbsp;%</span>
-                  </td>
-                </template>
-              </v-data-table>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-container>
-      </v-content>
-    <v-footer fixed app height="auto" class="px-2">
+    <v-toolbar app>
+      <v-toolbar-title>
+        Comparateur de tarifs d'électricité
+        <span v-if="$vuetify.breakpoint.mdAndUp"> en France, indépendant et participatif</span>
+      </v-toolbar-title>
+    </v-toolbar>
+    <v-content>
+      <v-container>
+        <v-alert type="warning" :value="problemesOffres.length>0" class="mb-3">
+          <p>Problème<span v-if="problemesOffres.length>1">s</span> dans le fichier des tarifs&nbsp;:</p>
+          <ul>
+            <li v-for="probleme in problemesOffres" :key="probleme">
+              {{ probleme }}
+            </li>
+          </ul>
+        </v-alert>
+        <v-expansion-panel expand light class="ml-0">
+          <v-expansion-panel-content>
+            <div slot="header">
+              <v-icon>help</v-icon>
+              Aide
+            </div>
+            <v-container grid-list-md>
+              <v-layout row wrap>
+                <v-flex xs12 class="intro">
+                  <h2>Qui, quoi, comment ?</h2>
+                  <v-container grid-list-lg>
+                    <v-layout row wrap>
+                      <v-flex xs12 sm6>
+                        <p>Ce comparateur a été entièrement créé sur le temps libre de <a href="https://www.maccagnoni.eu/" target="_blank">Sébastien Maccagnoni</a>, qui n'a aucun intérêt financier dans aucun des fournisseurs d'accès cités. Informaticien, curieux et aimant les comparatifs, Sébastien créait tous les ans des tableaux afin de comparer le tarif qu'il paye à ce qu'il pourrait payer ailleurs. Dans un esprit de partage et pour exercer sa passion du développement pour un projet sympa, il a décidé de créer ce comparateur.</p>
+                        <p>Attention: ce comparateur ne prend en compte que les offres électricité seules: aucune offre électricité+gaz n'est traitée. Les liens du tableau comparatif n'offrent aucune réduction d'aucune sorte, chez aucun fournisseur.</p>
+                        <p>Sébastien a choisi de n'afficher aucune publicité sur ce site&nbsp;: celui-ci ne lui apporte aucune rémunération directe. Si vous trouvez ce comparateur utile et que vous souhaitez récompenser Sébastien, vous pouvez faire lui faire un don via <a href="https://www.tipeee.com/smacc">Tipeee</a>.</p>
+                        <p><b>Sébastien a choisi de s'abonner au fournisseur Ilek. Si vous souhaitez suivre son choix, n'hésitez pas à passer par <a href="https://www.ilek.fr/ambassadors/88cc8848-ab5d-4c9c-a3a1-88d8de5a1cb3?referral=ILEK10995" target="_blank">ce lien de parrainage</a>&nbsp;: vos premiers 100 kWh seront offerts.</b></p>
+                      </v-flex>
+                      <v-flex xs12 sm6>
+                        <p>L'intérêt de ce comparateur, en face d'autres outils du même genre, est multiple&nbsp;:</p>
+                        <ul>
+                          <li>l'ensemble des tarifs sont manuellement vérifiés et mis à jour, au moins une fois par an, sur la base des tarifs officiels des fournisseurs&nbsp;;</li>
+                          <li>les tarifs proposés sont comparés en une seule page, un grand tableau concis et complet&nbsp;;</li>
+                          <li>l'ensemble des calculs sont effectués sur votre propre machine: aucune information n'est transmise au serveur, aucun cookie n'est installé, aucun "flicage" n'est possible&nbsp;;</li>
+                          <li>vous pouvez comparer les tarifs avec votre facture actuelle&nbsp;;</li>
+                          <li>si vous avez des idées ou des besoins, vous pouvez les soumettre &mdash; de même, si vous voulez participer, c'est possible, cherchez le menu en bas de l'écran pour en savoir plus&nbsp;!</li>
+                        </ul>
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
+                </v-flex>
+                <v-divider light />
+                <v-flex xs12 md6>
+                  <h2>Les paramètres</h2>
+                  <p>La section "Paramètres" vous permet de renseigner votre consommation afin de pouvoir calibrer le comparateur.</p>
+                  <p>Tout d'abord, indiquez votre type d'abonnement: tarif unique, HP/HC ou tempo (le comparateur ne prend pas en compte le tarif EJP)&nbsp;; ensuite, précisez la puissance nécessaire en kVA&nbsp;; enfin, renseignez votre consommation annuelle en kWh dans la colonne "Consommation annuelle".</p>
+                  <p>Le champ "Facture actuelle annuelle" et la section "Prix actuel du kWh" permettent de comparer précisément votre abonnement actuel avec les offres connues du comparateur. Ceux-ci sont facultatifs.</p>
+                  <h3>Options</h3>
+                  <dl>
+                    <dt>Inclure tarifs base</dt>
+                    <dd>Afficher les offres avec un seul tarif quel que soit le moment de la journée.</dd>
+                    <dt>Inclure tarifs heures pleines / heures creuses</dt>
+                    <dd>Afficher les offres proposant un double tarif heures pleines / heures creuses.</dd>
+                    <dt>Inclure tarifs tempo</dt>
+                    <dd>Afficher les offres proposant six tarifs (jours bleu/blanc/rouge, heures pleines ou creuses).</dd>
+                    <dt>Inclure anciens tarifs</dt>
+                    <dd>Afficher les tarifs anciens (plus vieux qu'un an, généralement des offres non reconduites).</dd>
+                    <dt>Voiture électrique : prix/100km</dt>
+                    <dd>Afficher une estimation du prix de l'électricité pour 100km parcourus en voiture électrique.</dd>
+                    <dt>Consommation moyenne de votre voiture</dt>
+                    <dd>Consommation en kWh aux 100km de votre voiture électrique (si vous ne savez pas, 16kWh/100 serait un bon point de départ)&nbsp;; cette consommation est automatiquement majorée de 15% pour prendre en compte le rendement du chargeur.</dd>
+                  </dl>
+                </v-flex>
+                <v-flex xs12 md6>
+                  <h2>Le comparatif</h2>
+                  <dl>
+                    <dt>Date tarif</dt>
+                    <dd>Date à laquelle le tarif a été consulté sur le site web du fournisseur</dd>
+                    <dt>Offre</dt>
+                    <dd>Fournisseur et nom de l'offre</dd>
+                    <dt>Type</dt>
+                    <dd>Type de l'offre (base, HP/HC ou tempo)</dd>
+                    <dt>Total</dt>
+                    <dd>Coût annuel avec l'offre, pour la consommation renseignée dans les paramètres</dd>
+                    <dt>HP</dt>
+                    <dd>Coût d'un kWh en heures pleines (coût unique pour un tarif "base", ou coût moyen pour un tarif tempo)</dd>
+                    <dt>HC</dt>
+                    <dd>Coût d'un kWh en heures creuses (inapplicable pour un tarif "base", coût moyen pour un tarif tempo)</dd>
+                    <dt>Abo</dt>
+                    <dd>Coût de l'abonnement annuel</dd>
+                    <dt>VE HP (optionnel)</dt>
+                    <dd>Coût pour 100km parcourus avec une voiture électrique chargée en heures pleines</dd>
+                    <dt>VE HC (optionnel)</dt>
+                    <dd>Coût pour 100km parcourus avec une voiture électrique chargée en heures creuses</dd>
+                    <dt>Delta (optionnel)</dt>
+                    <dd>Différence (en pourcents) entre votre tarif total actuel et le tarif affiché</dd>
+                  </dl>
+                  <hr />
+                  <ul>
+                    <li>Tous les prix annoncés sont TTC</li>
+                    <li>Les lignes en rouge représentent des tarifs anciens, généralement à ignorer</li>
+                    <li>Les offres sur fond vert clair sont des offres "énergie 100% renouvelable"</li>
+                    <li>Les offres sur fond vert foncé sont des offres "renouvelable et local", permettant un "circuit court"</li>
+                    <li>Lorsque des offres sont complexes (offres "week-end" par exemple), le simulateur répartit les consommations de manière lissée, comme si vous consommiez autant à tous les moments &mdash; bien sûr, si vous avez précisé vos consommations HP et HC, celles-ci restent prises en compte.</li>
+                  </ul>
+                </v-flex>
+              </v-layout>
+              <v-layout row>
+                <v-flex xs12>
+                  <h2>Revenir sur le comparateur</h2>
+                  <p>Pour revenir sur le comparateur en gardant vos paramètres, enregistez simplement l'adresse courante dans vos marque-pages, celle-ci change selon vos paramètres. Actuellement, l'adresse à utiliser pour revenir avec vos paramètres est la suivante&nbsp;:</p>
+                  <p><a :href="adresseActuelle">{{ adresseActuelle }}</a></p>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-expansion-panel-content>
+          <v-expansion-panel-content value="true">
+            <div slot="header">
+              <v-icon>settings</v-icon>
+              Paramètres
+            </div>
+            <v-container grid-list-lg class="px-4">
+              <v-layout row wrap>
+                <v-flex xs12 md4>
+                  <v-subheader light>Abonnement</v-subheader>
+                  <v-select light :items="types" v-model="params.type" label="Type d'abonnement" single-line />
+                  <v-select light :items="puissances" v-model="params.puissance" label="Puissance" single-line />
+                  <v-text-field light type="number" label="Facture actuelle annuelle (facultatif)" v-model.number="params.total" suffix="€/an" min="0" />
+                  <v-subheader light>Options</v-subheader>
+                  <v-checkbox light label="Inclure tarifs base" v-model="params.base" />
+                  <v-checkbox light label="Inclure tarifs heures pleines / heures creuses" v-model="params.hphc" />
+                  <v-checkbox light label="Inclure tarifs tempo" v-model="params.tempo" />
+                  <v-checkbox light label="Uniquement électricité renouvelable" v-model="params.renouvelable" />
+                  <v-checkbox light label="Uniquement production locale" v-model="params.local" />
+                  <v-checkbox light label="Inclure anciens tarifs" v-model="params.anciens" />
+                  <v-container class="pa-0">
+                    <v-layout row wrap>
+                      <v-flex xs12>
+                        <v-checkbox  light label="Voiture électrique : prix/100km" v-model="params.ve" />
+                      </v-flex>
+                      <v-flex xs12>
+                        <v-text-field light type="number" label="Consommation moyenne de votre voiture" v-model.number="params.consove" suffix="kWh/100km" hint="Sera majorée de 15% (rendement du chargeur)" min="0" v-if="params.ve" />
+                      </v-flex>
+                    </v-layout>
+                  </v-container>
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-subheader light>Consommation annuelle</v-subheader>
+                  <v-text-field light type="number" :label="labelHP" v-model.number="params.conso" suffix="kWh/an" min="0" />
+                  <v-text-field light type="number" :label="labelHC" v-model.number="params.consohc" suffix="kWh/an" min="0" v-if="params.type=='hphc' || params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures pleines jours blancs" v-model.number="params.consohpbc" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures creuses jours blancs" v-model.number="params.consohcbc" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures pleines jours rouges" v-model.number="params.consohprg" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures creuses jours rouges" v-model.number="params.consohcrg" suffix="kWh/an" min="0" v-if="params.type=='tempo'" />
+                </v-flex>
+                <v-flex xs12 md4>
+                  <v-subheader light>Prix actuel du kWh (facultatif)</v-subheader>
+                  <v-text-field light type="number" :label="labelHP" v-model.number="params.tarif" suffix="cts/kWh" min="0" />
+                  <v-text-field light type="number" :label="labelHC" v-model.number="params.tarifhc" suffix="cts/kWh" min="0" v-if="params.type=='hphc' || params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures pleines jours blancs" v-model.number="params.tarifhpbc" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures creuses jours blancs" v-model.number="params.tarifhcbc" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures pleines jours rouges" v-model.number="params.tarifhprg" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
+                  <v-text-field light type="number" label="Heures creuses jours rouges" v-model.number="params.tarifhcrg" suffix="cts/kWh" min="0" v-if="params.type=='tempo'" />
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-expansion-panel-content>
+          <v-expansion-panel-content value="true">
+            <div slot="header">
+              <v-icon>search</v-icon>
+              Comparatif
+            </div>
+            <v-data-table
+              light
+              hide-actions
+              must-sort
+              :headers="headers"
+              :items="fournisseurs"
+              :pagination.sync="ordre"
+              no-data-text="Aucune donnée correspondante"
+              no-results-text="Aucun résultat correspondant"
+              transition="slide-y-transition"
+            >
+              <template slot="items" slot-scope="props" transition="slide-y-transition">
+                <td :class="{'red--text': props.item.vieuxTarif}">
+                  {{ props.item.date }}
+                </td>
+                <td :class="{
+                  'red--text': props.item.vieuxTarif,
+                  'green': props.item.renouvelable,
+                  'teal': props.item.local&&!props.item.renouvelable,
+                  'accent-1': (props.item.renouvelable&&!props.item.local)||(!props.item.renouvelable&&props.item.local),
+                  'accent-2': props.item.renouvelable&&props.item.local
+                }">
+                  <v-tooltip :disabled="!props.item.note" bottom max-width="500" open-delay="0" close-delay="500">
+                    <span slot="activator">
+                      <span v-if="!props.item.url">{{ props.item.offre }}</span>
+                      <a :href="props.item.url" target="_blank" v-if="props.item.url">{{ props.item.offre }}</a>
+                      <v-icon light small class="ml-2" v-if="props.item.note">help</v-icon>
+                    </span>
+                    <span v-html="props.item.note" />
+                  </v-tooltip>
+                </td>
+                <td :class="{
+                  'green': props.item.renouvelable,
+                  'teal': props.item.local&&!props.item.renouvelable,
+                  'accent-1': (props.item.renouvelable&&!props.item.local)||(!props.item.renouvelable&&props.item.local),
+                  'accent-2': props.item.renouvelable&&props.item.local
+                }">
+                  {{ humanType(props.item.type) }}
+                </td>
+                <td class="text-xs-right">
+                  <b>{{ props.item.total.toFixed(2).replace(".", ",") }}&nbsp;€</b>
+                </td>
+                <td class="text-xs-right">
+                  {{ props.item.hp.toFixed(2).replace(".", ",") }}&nbsp;cts
+                </td>
+                <td class="text-xs-right">
+                  <span v-if="props.item.type == 'hphc' || props.item.type == 'tempo'">{{ props.item.hc.toFixed(2).replace(".", ",") }}&nbsp;cts</span>
+                </td>
+                <td class="text-xs-right">
+                  {{ props.item.abo.toFixed(2).replace(".", ",") }}&nbsp;€
+                </td>
+                <td class="text-xs-right" v-if="params.ve">
+                  {{ props.item.vehp.toFixed(2).replace(".", ",") }}&nbsp;€
+                </td>
+                <td class="text-xs-right" v-if="params.ve">
+                  <span v-if="props.item.type == 'hphc' || props.item.type == 'tempo'">{{ props.item.vehc.toFixed(2).replace(".", ",") }}&nbsp;€</span>
+                </td>
+                <td class="text-xs-right" v-if="params.total">
+                  <span v-if="props.item.delta<0" class="success--text">{{ props.item.delta.toFixed(2).replace(".", ",") }}&nbsp;%</span>
+                  <span v-if="props.item.delta>0" class="error--text">+{{ props.item.delta.toFixed(2).replace(".", ",") }}&nbsp;%</span>
+                </td>
+              </template>
+            </v-data-table>
+          </v-expansion-panel-content>
+        </v-expansion-panel>
+      </v-container>
+    </v-content>
+    <v-footer fixed app height="auto" class="px-2 hidden-xs-only">
       <span>
         &copy; 2018 &mdash;
         <a class="primary--text text--lighten-3" href="https://www.maccagnoni.eu">Sébastien Maccagnoni</a> &mdash;
