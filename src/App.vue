@@ -257,7 +257,11 @@ hr {
         </v-container>
       </v-content>
     <v-footer fixed app height="auto" class="px-2">
-      <span>&copy; 2018 &mdash; Sébastien Maccagnoni</span>
+      <span>
+        &copy; 2018 &mdash;
+        <a class="primary--text text--lighten-3" href="https://www.maccagnoni.eu">Sébastien Maccagnoni</a> &mdash;
+        <a class="primary--text text--lighten-3" href="https://github.com/tiramiseb/comparateur-electricite">projet sous licence AGPL</a>
+      </span>
       <v-spacer/>
       <v-menu top offset-y transition="slide-y-reverse-transition">
         <v-btn color="info" slot="activator">Participer</v-btn>
