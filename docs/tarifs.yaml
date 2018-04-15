@@ -1,0 +1,3037 @@
+---
+
+# Alterna
+- offre: Alterna Idéa Elec, base
+  type: base
+  url: http://www.alterna-energie.fr/particuliers/idea-electricite/
+  prix:
+    - date: 20160327
+      hp:
+        9: 13.56
+      abo:
+        9: 129.36
+    - date: 20170306
+      hp:
+        9: 13.42
+      abo:
+        9: 130.08
+    - date: 20180407
+      hp:
+        3: 14.31
+        6: 13.75
+        9: 13.54
+        12: 13.32
+        15: 13.44
+        18: 13.34
+        24: 12.66
+        30: 12.70
+        36: 12.73
+      abo:
+        3: 100.92
+        6: 115.92
+        9: 131.04
+        12: 195.84
+        15: 219.60
+        18: 243.6
+        24: 455.28
+        30: 543.84
+        36: 632.64
+- offre: Alterna Idéa Elec, option HC
+  type: hphc
+  url: http://www.alterna-energie.fr/particuliers/idea-electricite/
+  prix:
+    - date: 20160327
+      hc:
+        9: 12.25
+      hp:
+        9: 14.03
+      abo:
+        9: 137.88
+    - date: 20170306
+      hc:
+        9: 11.85
+      hp:
+        9: 13.66
+      abo:
+        9: 138.96
+    - date: 20180407
+      hc:
+        6: 12.26
+        9: 12.13
+        12: 12.21
+        15: 12.3
+        18: 12.34
+        24: 12.4
+        30: 12.44
+        36: 12.46
+      hp:
+        6: 14.07
+        9: 13.94
+        12: 14.02
+        15: 14.11
+        18: 14.16
+        24: 14.22
+        30: 14.25
+        36: 14.28
+      abo:
+        6: 140.76
+        9: 168.24
+        12: 210.48
+        15: 238.08
+        18: 265.56
+        24: 320.52
+        30: 375.6
+        36: 430.56
+- offre: Alterna Idéa vert, base
+  type: base
+  renouvelable: true
+  url: http://www.alterna-energie.fr/particuliers/idea-electricite/
+  prix:
+    - date: 20160327
+      hp:
+        9: 13.66
+      abo:
+        9: 129.36
+    - date: 20170306
+      hp:
+        9: 13.52
+      abo:
+        9: 130.08
+    - date: 20180407
+      hp:
+        3: 14.41
+        6: 13.84
+        9: 13.64
+        12: 13.41
+        15: 13.53
+        18: 13.44
+        24: 12.75
+        30: 12.8
+        36: 12.82
+      abo:
+        3: 100.92
+        6: 115.92
+        9: 131.04
+        12: 195.84
+        15: 219.60
+        18: 243.6
+        24: 455.28
+        30: 543.84
+        36: 632.64
+- offre: Alterna Idéa vert, option HC
+  type: hphc
+  renouvelable: true
+  url: http://www.alterna-energie.fr/particuliers/idea-electricite/
+  prix:
+    - date: 20160327
+      hc:
+        9: 12.34
+      hp:
+        9: 14.13
+      abo:
+        9: 137.88
+    - date: 20170306
+      hc:
+        9: 11.95
+      hp:
+        9: 13.76
+      abo:
+        9: 138.96
+    - date: 20180407
+      hc:
+        6: 12.36
+        9: 12.22
+        12: 12.31
+        15: 12.39
+        18: 12.44
+        24: 12.5
+        30: 12.54
+        36: 12.56
+      hp:
+        6: 14.17
+        9: 14.04
+        12: 14.12
+        15: 14.20
+        18: 14.25
+        24: 14.31
+        30: 14.35
+        36: 14.37
+      abo:
+        6: 140.76
+        9: 168.24
+        12: 210.48
+        15: 238.08
+        18: 265.56
+        24: 320.52
+        30: 375.6
+        36: 430.56
+
+# Cdiscount énergie
+- offre: Cdiscount énergie, base
+  type: base
+  url: https://www.cdiscount.com/cdiscountenergie
+  prix:
+    - date: 20180408
+      hp:
+        3: 13.73
+        6: 12.98
+        x: 13.12
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Cdiscount énergie, HPHC
+  type: hphc
+  url: https://www.cdiscount.com/cdiscountenergie
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.09
+      hp:
+        x: 14.05
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 244.8
+        30: 282.36
+        36: 316.68
+
+# Direct Energie
+- offre: Direct Energie classique, base
+  type: base
+  url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-classique-electricite
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.4
+      abo:
+        9: 117.24
+    - date: 20170306
+      hp:
+        9: 14.02
+      abo:
+        9: 111.36
+    - date: 20180407
+      hp:
+        3: 14.9
+        6: 14.06
+        x: 14.22
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Direct Energie classique, HPHC
+  type: hphc
+  url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-classique-electricite
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.05
+      hp:
+        9: 15.66
+      abo:
+        9: 126.48
+    - date: 20170306
+      hc:
+        9: 12.19
+      hp:
+        9: 14.94
+      abo:
+        9: 117.48
+    - date: 20180407
+      hc:
+        x: 11.95
+      hp:
+        x: 15.26
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 282.36
+        36: 316.68
+- offre: Direct Energie Esprit Libre, base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.03
+      abo:
+        9: 117.24
+- offre: Direct Energie Esprit Libre, HPHC
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.5
+      hp:
+        9: 16.36
+      abo:
+        9: 126.48
+- offre: Direct Energie Online, base
+  type: base
+  url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-online-electricite
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.06
+      abo:
+        9: 117.24
+    - date: 20170306
+      hp:
+        9: 13.48
+      abo:
+        9: 111.36
+    - date: 20180407
+      hp:
+        3: 14.32
+        6: 13.52
+        x: 13.67
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Direct Energie Online, HPHC
+  type: hphc
+  url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-online-electricite
+  prix:
+    - date: 20160327
+      hc:
+        9: 10.81
+      hp:
+        9: 15.29
+      abo:
+        9: 126.48
+    - date: 20170306
+      hc:
+        9: 11.75
+      hp:
+        9: 14.35
+      abo:
+        9: 117.48
+    - date: 20180407
+      hc:
+        x: 11.52
+      hp:
+        x: 14.66
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 244.8
+        30: 282.36
+        36: 316.68
+- offre: Direct Energie verte, base
+  type: base
+  renouvelable: true
+  url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-verte-electricite
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.74
+      abo:
+        9: 117.24
+    - date: 20170306
+      hp:
+        9: 14.34
+      abo:
+        9: 111.36
+    - date: 20180407
+      hp:
+        3: 15.25
+        6: 14.39
+        x: 14.54
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Direct Energie verte, HPHC
+  type: hphc
+  renouvelable: true
+  url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-verte-electricite
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.28
+      hp:
+        9: 16.04
+      abo:
+        9: 126.48
+    - date: 20170306
+      hc:
+        9: 12.46
+      hp:
+        9: 15.29
+      abo:
+        9: 117.48
+    - date: 20180407
+      hc:
+        x: 12.2
+      hp:
+        x: 15.62
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 244.8
+        30: 282.36
+        36: 316.68
+
+# EDF
+- offre: EDF base
+  type: base
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite/tarif-bleu/option-base.html
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.03
+      abo:
+        9: 117.2
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 111.35
+    - date: 20180407
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 68.88
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: EDF heures creuses
+  type: hphc
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite/tarif-bleu/option-heures-creuses.html
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.5
+      hp:
+        9: 16.36
+      abo:
+        9: 126.52
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 117.5
+    - date: 20180407
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 282.36
+        36: 316.68
+- offre: EDF vert électrique, base
+  type: base
+  renouvelable: true
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite-bis/offres-marche/vert-electrique.html
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.37
+      abo:
+        9: 117.2
+    - date: 20170306
+      hp:
+        9: 15.06
+      abo:
+        9: 111.35
+    - date: 20180407
+      hp:
+        6: 14.1
+        9: 14.72
+        x: 14.88
+      abo:
+        6: 122.02
+        9: 129.89
+        12: 138.53
+        15: 157.03
+        18: 178.33
+        24: 215.98
+        30: 256.54
+        36: 288.63
+- offre: EDF vert électrique, heures creuses
+  type: hphc
+  renouvelable: true
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite-bis/offres-marche/vert-electrique.html
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.89
+      hp:
+        9: 16.62
+      abo:
+        9: 126.52
+    - date: 20170306
+      hc:
+        9: 13
+      hp:
+        9: 15.9
+      abo:
+        9: 117.5
+    - date: 20180407
+      hc:
+        x: 12.43
+      hp:
+        x: 16.17
+      abo:
+        6: 115.82
+        9: 142.06
+        12: 166.14
+        15: 188.45
+        18: 208.99
+        24: 257.29
+        30: 312.29
+        36: 367.30
+- offre: EDF vert électrique week-end
+  type: base
+  renouvelable: true
+  note: Avec cette offre, l'électricité est moins chère le week-end et les jours fériés. Le tarif indiqué ici est une moyenne précalculée, avec une consommation régulière tout le long de la semaine (5 jours au tarif "semaine" pour 2 jours au tarif week-end)
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite-bis/offres-marche/vert-electrique-week-end.html
+  prix:
+    - date: 20180407
+      hp:
+        6: 15.5071
+        9: 15.2443
+        x: 14.96
+      abo:
+        6: 102.14
+        9: 120.14
+        12: 138.53
+        15: 157.03
+        18: 178.33
+        24: 215.98
+        30: 256.54
+        36: 288.63
+- offre: EDF vert électrique week-end + heures creuses
+  type: hphc
+  renouvelable: true
+  note: Avec cette offre, l'électricité est moins chère le week-end et les jours fériés, en plus des heures creuses. Le tarif "heures pleines" indiqué ici est une moyenne précalculée, avec une consommation régulière tout le long de la semaine (5 jours au tarif "semaine" pour 2 jours au tarif week-end)
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite-bis/offres-marche/vert-electrique-week-end.html
+  prix:
+    - date: 20180407
+      hc:
+        6: 12.91
+        x: 12.39
+      hp:
+        6: 16.2671
+        x: 16.0257
+      abo:
+        6: 115.82
+        9: 142.06
+        12: 166.14
+        15: 188.45
+        18: 208.99
+        24: 257.16
+        30: 299
+        36: 337.67
+        x:
+- offre: EDF vert électrique auto, heures creuses
+  type: hphc
+  renouvelable: true
+  note: Cette offre nécessite d'être propriétaire d'une voiture électrique ou hybride rechargeable
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite-bis/offres-marche/vert-electrique-auto.html
+  prix:
+    - date: 20180407
+      hc:
+        x: 11.64
+      hp:
+        x: 16.83
+      abo:
+        6: 136.96
+        9: 163.20
+        12: 187.28
+        15: 241.25
+        18: 261.79
+        24: 362.62
+        30: 404.46
+        36: 443.13
+- offre: EDF vert électrique auto, heures creuses + week-end
+  type: hphc
+  renouvelable: true
+  note: Avec cette offre, l'électricité est moins chère le week-end et les jours fériés, en plus des heures creuses. Le tarif "heures pleines" indiqué ici est une moyenne précalculée, avec une consommation régulière tout le long de la semaine (5 jours au tarif "semaine" pour 2 jours au tarif week-end). Cette offre nécessite d'être propriétaire d'une voiture électrique ou hybride rechargeable
+  url: https://particulier.edf.fr/fr/accueil/offres/electricite-bis/offres-marche/vert-electrique-auto.html
+  prix:
+    - date: 20180407
+      hc:
+        x: 12.39
+      hp:
+        x: 16.69
+      abo:
+        6: 136.96
+        9: 163.2
+        12: 187.28
+        15: 241.25
+        18: 261.79
+        24: 362.62
+        30: 404.46
+        36: 443.13
+- offre: EDF Tempo
+  type: tempo
+  url: https://particulier.edf.fr/fr/accueil/contrat-et-conso/options/tempo/details.html
+  prix:
+    - date: 20160327
+      hc:
+        9: 9.67
+      hp:
+        9: 11.47
+      hcbc:
+        9: 13.36
+      hpbc:
+        9: 15.85
+      hcrg:
+        9: 24.02
+      hprg:
+        9: 62.07
+      abo:
+        9: 131.33
+    - date: 20170306
+      hc:
+        9: 10.75
+      hp:
+        9: 12.78
+      hcbc:
+        9: 14
+      hpbc:
+        9: 16.74
+      hcrg:
+        9: 21.61
+      hprg:
+        9: 52.16
+      abo:
+        9: 116.24
+    - date: 20180407
+      hc:
+        x: 11.13
+      hp:
+        x: 13.27
+      hcbc:
+        x: 13.47
+      hpbc:
+        x: 16.29
+      hcrg:
+        x: 17.47
+      hprg:
+        x: 54.82
+      abo:
+        9: 143.4
+        12: 166.8
+        15: 175.2
+        18: 190.08
+        30: 268.2
+        36: 305.88
+
+# ekWateur
+- offre: ekWateur, prix fixe, base
+  type: base
+  url: https://ekwateur.fr/offre-electricite
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hp:
+        3: 13.7
+        6: 13.7
+        x: 13.82
+      abo:
+        3: 123.12
+        6: 140.52
+        9: 157.92
+        12: 175.2
+        15: 192.6
+        18: 210
+        24: 244.68
+        30: 279.36
+        36: 314.16
+- offre: ekWateur, prix fixe, HPHC
+  type: hphc
+  url: https://ekwateur.fr/offre-electricite
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.1
+      hp:
+        x: 14.37
+      abo:
+        3: 133.32
+        6: 160.8
+        9: 188.28
+        12: 215.76
+        15: 243.36
+        18: 270.84
+        24: 325.8
+        30: 380.76
+        36: 435.72
+- offre: ekWateur,  pas d'option prix fixe, base
+  type: base
+  url: https://ekwateur.fr/offre-electricite
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hp:
+        3: 13.54
+        6: 13.54
+        x: 13.64
+      abo:
+        3: 123.12
+        6: 140.52
+        9: 157.92
+        12: 175.2
+        15: 192.6
+        18: 210
+        24: 244.68
+        30: 279.36
+        36: 314.16
+- offre: ekWateur, pas d'option prix fixe, HPHC
+  type: hphc
+  url: https://ekwateur.fr/offre-electricite
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hc:
+        x: 11.94
+      hp:
+        x: 14.13
+      abo:
+        3: 133.32
+        6: 160.8
+        9: 188.28
+        12: 215.76
+        15: 243.36
+        18: 270.84
+        24: 325.8
+        30: 380.76
+        36: 435.72
+
+# Électricité de Provence
+- offre: Électricité de Provence, base
+  type: base
+  url: http://electricite-de-provence.com/offre/particuliers/
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hp:
+        3: 14.82
+        6: 14.03
+        x: 14.17
+      abo:
+        3: 68.88
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Électricité de Provence, HPHC
+  type: hphc
+  url: http://electricite-de-provence.com/offre/particuliers/
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hc:
+        x: 11.87
+      hp:
+        x: 15.19
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+
+# Électricité de Strasbourg
+- offre: Électricité de Strasbourg, prix fixe 3 ans, 100% vert, base
+  url: http://particuliers.es.fr/electricite/notre-offre-electricite/offre-de-marche-energie-verte
+  renouvelable: true
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 16.61
+      abo:
+        9: 117.24
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 123.36
+    - date: 20180408
+      hp:
+        3: 15.548
+        6: 14.672
+        x: 14.828
+      abo:
+        3: 116.76
+        6: 155.04
+        9: 173.04
+        12: 215.52
+        15: 234
+        18: 255.24
+        24: 352.92
+        30: 391.32
+        36: 425.52
+- offre: Électricité de Strasbourg, prix fixe 3 ans, 100% vert, option HC
+  url: http://particuliers.es.fr/electricite/notre-offre-electricite/offre-de-marche-energie-verte
+  renouvelable: true
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 13.37
+      hp:
+        9: 18.75
+      abo:
+        9: 126.48
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 129.48
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.932
+      abo:
+        6: 168.72
+        9: 195
+        12: 243.12
+        15: 265.44
+        18: 285.96
+        24: 37.8
+        30: 414.36
+        36: 448.68
+- offre: Électricité de Strasbourg, pass élec, base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 16.06
+      abo:
+        9: 117.24
+- offre: Électricité de Strasbourg, pass élec, option HC
+  type: base
+  prix:
+    - date: 20160327
+      hc:
+        9: 12.61
+      hp:
+        9: 18.12
+      abo:
+        9: 126.48
+- offre: Électricité de Strasbourg, prix fixe 3 ans, base
+  url: http://particuliers.es.fr/electricite/notre-offre-electricite/offre-de-marche
+  type: base
+  prix:
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 111.36
+    - date: 20180408
+      hp:
+        3: 15.548
+        6: 14.672
+        x: 14.828
+      abo:
+        3: 104.76
+        6: 143.04
+        9: 161.04
+        12: 179.52
+        15: 198
+        18: 219.24
+        24: 256.92
+        30: 295.32
+        36: 329.52
+- offre: Électricité de Strasbourg, prix fixe 3 ans, option HC
+  url: http://particuliers.es.fr/electricite/notre-offre-electricite/offre-de-marche
+  type: hphc
+  prix:
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 129.48
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.932
+      abo:
+        6: 156.72
+        9: 183
+        12: 207.12
+        15: 229.44
+        18: 249.96
+        24: 280.8
+        30: 318.36
+        36: 352.68
+- offre: Électricité de Strasbourg, tarif bleu, base
+  url: http://particuliers.es.fr/electricite/notre-offre-electricite/tarif-reglemente
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.03
+      abo:
+        9: 117.24
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 111.36
+    - date: 20180408
+      hp:
+        3: 15.548
+        6: 14.672
+        x: 14.828
+      abo:
+        3: 68.88
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+- offre: Électricité de Strasbourg, tarif bleu, option HC
+  url: http://particuliers.es.fr/electricite/notre-offre-electricite/tarif-reglemente
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.5
+      hp:
+        9: 16.37
+      abo:
+        9: 126.48
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 117.48
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.932
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 282.36
+        36: 316.68
+- offre: Électricité de Strasbourg, tarif bleu, option tempo
+  url: http://particuliers.es.fr/electricite/notre-offre-electricite/tarif-reglemente
+  type: tempo
+  prix:
+    - date: 20160327
+      hc:
+        9: 9.67
+      hp:
+        9: 11.47
+      hcbc:
+        9: 13.36
+      hpbc:
+        9: 5.85
+      hcrg:
+        9: 24.02
+      hprg:
+        9: 62.08
+      abo:
+        9: 131.28
+    - date: 20170306
+      hc:
+        9: 10.75
+      hp:
+        9: 12.78
+      hcbc:
+        9: 14
+      hpbc:
+        9: 16.74
+      hcrg:
+        9: 21.61
+      hprg:
+        9: 52.16
+      abo:
+        9: 116.28
+    - date: 20180408
+      hc:
+        x: 11.132
+      hp:
+        x: 13.268
+      hcbc:
+        x: 13.472
+      hpbc:
+        x: 12.292
+      hcrg:
+        x: 17.468
+      hprg:
+        x: 54.824
+      abo:
+        9: 143.4
+        12: 166.8
+        15: 175.2
+        18: 190.08
+        24: 260.7
+        30: 268.2
+        36: 305.88
+
+# Enalp
+- offre: Enalp Alp'Energie Dom, base
+  type: base
+  url: http://www.enalp.fr/offres-particuliers/9/Alp%27+Dom.html
+  renouvelable: true
+  local: true
+  note: Offre réservée aux clients de la région Rhône Alpes
+  prix:
+    - date: 20180410
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 68.82
+        6: 107.08
+        9: 125.08
+        12: 143.46
+        15: 161.97
+        18: 183.26
+        24: 220.92
+        30: 261.48
+        36: 293.56
+- offre: Enalp Alp'Energie Dom, HPHC
+  type: hphc
+  url: http://www.enalp.fr/offres-particuliers/9/Alp%27+Dom.html
+  renouvelable: true
+  local: true
+  note: Offre réservée aux clients de la région Rhône Alpes
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 120.76
+        9: 146.99
+        12: 171.08
+        15: 193.39
+        18: 213.93
+        24: 262.1
+        30: 303.93
+        36: 342.61
+- offre: Enalp Alp'Energie Noé Dom, base
+  type: base
+  url: http://www.enalp.fr/offres-particuliers/10/Alp+Energie.html
+  renouvelable: true
+  local: true
+  note: Offre réservée aux clients de la région Rhône Alpes
+  prix:
+    - date: 20180410
+      hp:
+        3: 16.22
+        6: 15.34
+        x: 15.5
+      abo:
+        3: 68.82
+        6: 107.08
+        9: 125.08
+        12: 143.46
+        15: 161.97
+        18: 183.26
+        24: 220.92
+        30: 261.48
+        36: 293.56
+- offre: Enalp Alp'Energie Noé Dom, HPHC
+  type: hphc
+  url: http://www.enalp.fr/offres-particuliers/10/Alp+Energie.html
+  renouvelable: true
+  local: true
+  note: Offre réservée aux clients de la région Rhône Alpes
+  prix:
+    - date: 20180410
+      hc:
+        x: 13.11
+      hp:
+        x: 16.6
+      abo:
+        6: 120.76
+        9: 146.99
+        12: 171.08
+        15: 193.39
+        18: 213.93
+        24: 262.1
+        30: 303.93
+        36: 342.61
+
+# Enercoop
+- offre: Enercoop base
+  type: base
+  renouvelable: true
+  local: true
+  url: http://www.enercoop.fr/nos-offres/particuliers
+  prix:
+    - date: 20160327
+      hp:
+        9: 16.78
+      abo:
+        9: 140.88
+    - date: 20170306
+      hp:
+        9: 16.83
+      abo:
+        9: 141.36
+    - date: 20180408
+      hp:
+        3: 17.397
+        6: 17.397
+        x: 17.472
+      abo:
+        3: 103.8
+        6: 133.56
+        9: 163.2
+        12: 232.92
+        15: 275.88
+        18: 318.72
+        24: 478.32
+        30: 583.2
+        36: 688.2
+- offre: Enercoop heures pleines / heures creuses
+  type: hphc
+  renouvelable: true
+  local: true
+  url: http://www.enercoop.fr/nos-offres/particuliers
+  prix:
+    - date: 20180408
+      hc:
+        x: 17.285
+      hp:
+        x: 17.7014
+      abo:
+        3: 105.96
+        6: 137.88
+        9: 169.68
+        12: 241.56
+        15: 286.68
+        18: 331.68
+        24: 495.6
+        30: 604.68
+        36: 714
+
+# énergem
+- offre: énergem Fixo Elec, base
+  type: base
+  url: http://www.energem.fr/fixo-elec-0
+  renouvelable: true
+  local: true
+  prix:
+    - date: 20180410
+      hp:
+        3: 15.55
+        6: 14.68
+        x: 14.83
+      abo:
+        3: 68.82
+        6: 107.08
+        9: 125.08
+        12: 143.46
+        15: 161.97
+        18: 183.26
+        24: 220.92
+        30: 261.48
+        36: 293.56
+- offre: énergem Fixo Elec, HPHC
+  type: hphc
+  url: http://www.energem.fr/fixo-elec-0
+  renouvelable: true
+  local: true
+  prix:
+      hc:
+        x: 12.44
+      hp:
+        x: 15.94
+      abo:
+        6: 120.76
+        9: 146.99
+        12: 171.08
+        15: 193.39
+        18: 213.93
+        24: 262.1
+        30: 303.93
+        36: 342.61
+
+# Énergie d'ici
+- offre: Énergie d'ici, base
+  type: base
+  url: https://www.energiedici.fr/offre-particulier
+  renouvelable: true
+  local: true
+  prix:
+    - date: 20180410
+      hp:
+        x: 14.38
+      abo:
+        3: 92.04
+        6: 109.32
+        9: 126.72
+        12: 144.12
+        15: 161.52
+        18: 178.8
+        24: 213.6
+        30: 248.28
+        36: 283.08
+- offre: Énergie d'ici, HPHC
+  type: hphc
+  url: https://www.energiedici.fr/offre-particulier
+  renouvelable: true
+  local: true
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.84
+      hp:
+        x: 14.65
+      abo:
+        6: 129.6
+        9: 157.08
+        12: 184.68
+        15: 212.16
+        18: 239.64
+        24: 294.6
+        30: 248.28
+        36: 404.64
+
+# Énergies du Santerre
+- offre: Énergies du Santerre, Domelec Confort
+  type: base
+  url: https://www.energiesdusanterre.fr/offre-domelec.php
+  prix:
+    - date: 20180410
+      hp:
+        3: 15.5
+        6: 14.58
+        x: 14.6
+      abo:
+        3: 65.76
+        6: 98.04
+        9: 115.44
+        12: 133.08
+        15: 150.84
+        18: 171.36
+        24: 207.48
+        30: 246.48
+        36: 277.44
+- offre: Énergies du Santerre, Domelec Optima
+  type: hphc
+  url: https://www.energiesdusanterre.fr/offre-domelec.php
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.11
+      hp:
+        x: 15.55
+      abo:
+        6: 111.24
+        9: 136.56
+        12: 159.84
+        15: 181.32
+        18: 205.8
+        24: 261.6
+        30: 326.04
+        36: 385.2
+
+
+# Engie
+- offre: Engie Elec Ajust 2 ans, base
+  type: base
+  prix:
+    - date: 20170306
+      hp:
+        9: 14.6
+      abo:
+        9: 111.35
+- offre: Engie Elec Ajust 2 ans, HPHC
+  type: hphc
+  prix:
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 117.5
+- offre: Engie Elec Ajust 3 ans, base
+  type: base
+  renouvelable: true
+  url: https://particuliers.engie.fr/electricite/contrat-electricite/contrat-elec-ajust.html
+  prix:
+    - date: 20180408
+      hp:
+        3: 15.5
+        6: 14.7
+        x: 14.8
+      abo:
+        3: 94.97
+        6: 123.52
+        9: 133.8
+        12: 152.18
+        15: 170.69
+        18: 191.99
+        24: 229.64
+        30: 270.2
+        36: 302.28
+- offre: Engie Elec Ajust 3 ans, HPHC
+  type: hphc
+  renouvelable: true
+  url: https://particuliers.engie.fr/electricite/contrat-electricite/contrat-elec-ajust.html
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.4
+      hp:
+        x: 15.9
+      abo:
+        6: 137.2
+        9: 155.71
+        12: 179.8
+        15: 202.11
+        18: 222.65
+        24: 270.82
+        30: 312.66
+        36: 351.33
+- offre: Engie Elec Fixe 1 an, base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.14
+      abo:
+        9: 117.2
+- offre: Engie Elec Fixe 1 an, HPHC
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 10.89
+      hp:
+        9: 15.36
+      abo:
+        9: 126.52
+- offre: Engie Elec Fixe 2 ans, base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.01
+      abo:
+        9: 117.2
+    - date: 20170306
+      hp:
+        9: 14.6
+      abo:
+        9: 111.35
+- offre: Engie Elec Fixe 2 ans, HPHC
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.5
+      hp:
+        9: 16.34
+      abo:
+        9: 126.52
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 117.5
+- offre: Engie Elec Verte 1 an, base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.18
+      abo:
+        9: 117.2
+- offre: Engie Elec Verte 1 an, HPHC
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 10.94
+      hp:
+        9: 15.41
+      abo:
+        9: 126.52
+- offre: Engie Elec Verte 2 ans, base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.05
+      abo:
+        9: 117.2
+- offre: Engie Elec Verte 2 ans, HPHC
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.55
+      hp:
+        9: 16.38
+      abo:
+        9: 126.52
+- offre: Engie Elec Weekend 2 ans
+  type: hphc
+  note: Cette offre nécessite d'avoir un compteur Linky communiquant. Avec cette offre, l'électricité est moins chère le week-end, en plus des heures creuses. Le tarif "heures pleines" indiqué ici est une moyenne précalculée, avec une consommation régulière tout le long de la semaine (5 jours au tarif "semaine" pour 2 jours au tarif week-end)
+  renouvelable: true
+  url: https://particuliers.engie.fr/electricite/contrat-electricite/contrat-elec-weekend.html
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.4
+      hp:
+        x: 15.04
+      abo:
+        6: 158.72
+        9: 184.96
+        12: 209.04
+        15: 231.35
+        18: 251.89
+        24: 300.06
+        30: 341.90
+        36: 380.57
+- offre: Engie Elec Weekend+ 1 an, base
+  type: base
+  note: Cette offre nécessite l'installation d'un boîtier communicant "sans fil" dans votre foyer. Avec cette offre, l'électricité est moins chère de 30% le week-end. Le tarif indiqué ici est une moyenne précalculée, avec une consommation régulière tout le long de la semaine (5 jours au tarif "semaine" pour 2 jours au tarif week-end). Attention, l'application du tarif "week-end" est plafonnée, si vous consommez beaucoup le week-end, vous pourriez basculer sur le tarif "semaine".
+  renouvelable: true
+  url: https://particuliers.engie.fr/electricite/contrat-electricite/contrat-elec-weekend-plus.html
+  prix:
+    - date: 20180408
+      hp:
+        3: 14.3543
+        6: 13.5314
+        x: 13.7143
+      abo:
+        3: 118.18
+        6: 156.43
+        9: 174.44
+        12: 192.82
+        15: 211.33
+        18: 232.62
+        24: 270.28
+        30: 310.84
+        36: 342.92
+- offre: Engie Elec Weekend+ 1 an, HPHC
+  type: hphc
+  note: Cette offre nécessite l'installation d'un boîtier communicant "sans fil" dans votre foyer. Avec cette offre, l'électricité est moins chère de 30% le week-end, en plus des heures creuses en semaine. Les tarifs indiqués ici sont des moyennes précalculées, avec une consommation régulière tout le long de la semaine (5 jours au tarif "semaine" pour 2 jours au tarif week-end). Attention, l'application du tarif "week-end" est plafonnée, si vous consommez beaucoup le week-end, vous pourriez basculer sur le tarif "semaine".
+  renouvelable: true
+  url: https://particuliers.engie.fr/electricite/contrat-electricite/contrat-elec-weekend-plus.html
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.0771
+      hp:
+        x: 14.72
+      abo:
+        6: 170.12
+        9: 196.35
+        12: 220.44
+        15: 242.75
+        18: 263.29
+        24: 311.46
+        30: 353.29
+        36: 391.97
+- offre: Engie Elec'Car 3 ans
+  renouvelable: true
+  url: https://particuliers.engie.fr/electricite/contrat-electricite/contrat-elec-car.html
+  type: hphc
+  prix:
+    - date: 20170306
+      hc:
+        9: 10.3
+      hp:
+        9: 16.7
+      abo:
+        9: 117.5
+    - date: 20180408
+      hc:
+        x: 9.9
+      hp:
+        x: 15.9
+      abo:
+        6: 207.25
+        9: 233.49
+        12: 257.57
+        15: 279.88
+        18: 300.42
+        24: 348.59
+        30: 390.43
+        36: 429.10
+
+# ENI
+- offre: ENI Webeo, base
+  type: base
+  url: https://fr.eni.com/particuliers/nos-offres/comparer-les-offres-electricite/webeo-electricite
+  prix:
+    - date: 20180408
+      hp:
+        3: 14.964
+        6: 14.131
+        x: 14.28
+      abo:
+        3: 68.81
+        6: 107.07
+        9: 125.07
+        12: 143.46
+        15: 161.97
+        18: 183.26
+        24: 220.91
+        30: 261.48
+        36: 293.56
+- offre: ENI Webeo, HPHC
+  type: hphc
+  url: https://fr.eni.com/particuliers/nos-offres/comparer-les-offres-electricite/webeo-electricite
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.011
+      hp:
+        x: 15.329
+      abo:
+        6: 120.75
+        9: 146.99
+        12: 171.07
+        15: 193.39
+        18: 213.92
+        24: 262.09
+        30: 303.93
+        36: 342.61
+- offre: ENI Evo, base
+  type: base
+  url: https://fr.eni.com/particuliers/nos-offres/comparer-les-offres-electricite/evo-electricite
+  prix:
+    - date: 20180408
+      hp:
+        3: 14.028
+        6: 13.265
+        x: 13.402
+      abo:
+        3: 68.81
+        6: 107.07
+        9: 125.07
+        12: 143.46
+        15: 161.97
+        18: 183.26
+        24: 220.91
+        30: 261.48
+        36: 293.56
+- offre: ENI Evo, HPHC
+  type: hphc
+  url: https://fr.eni.com/particuliers/nos-offres/comparer-les-offres-electricite/evo-electricite
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.323
+      hp:
+        x: 14.362
+      abo:
+        6: 120.75
+        9: 146.99
+        12: 171.07
+        15: 193.39
+        18: 213.92
+        24: 262.09
+        30: 303.93
+        36: 342.61
+- offre: ENI Astucio Eco, base
+  type: base
+  url: https://fr.eni.com/particuliers/nos-offres/comparer-les-offres-electricite/astucio-eco-electricite
+  prix:
+    - date: 20180408
+      hp:
+        3: 15.432
+        6: 14.564
+        x: 14.719
+      abo:
+        3: 81.47
+        6: 119.73
+        9: 137.73
+        12: 156.12
+        15: 174.63
+        18: 195.92
+        24: 233.57
+        30: 274.14
+        36: 306.22
+- offre: ENI Astucio Eco, HPHC
+  type: hphc
+  url: https://fr.eni.com/particuliers/nos-offres/comparer-les-offres-electricite/astucio-eco-electricite
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.354
+      hp:
+        x: 15.811
+      abo:
+        6: 133.41
+        9: 159.65
+        12: 183.73
+        15: 206.05
+        18: 226.58
+        24: 274.75
+        30: 316.59
+        36: 355.27
+
+# GEG
+- offre: GEG 100% web, simple tarif
+  type: base
+  url: https://particuliers.geg.fr/249-je-choisis-geg-et-je-profite-de-8-d-economie-sur-mes-consommations-d-electricite.htm
+  prix:
+    - date: 20170306
+      hp:
+        9: 13.76
+      abo:
+        9: 111.36
+    - date: 20180408
+      hp:
+        3: 14.96
+        6: 13.81
+        x: 13.95
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: GEG 100% web, double tarif
+  type: hphc
+  url: https://particuliers.geg.fr/249-je-choisis-geg-et-je-profite-de-8-d-economie-sur-mes-consommations-d-electricite.htm
+  prix:
+    - date: 20170306
+      hc:
+        9: 12
+      hp:
+        9: 14.66
+      abo:
+        9: 117.48
+    - date: 20180408
+      hc:
+        x: 11.76
+      hp:
+        x: 14.96
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 214.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+- offre: GEG tarif bleu option verte, simple
+  type: base
+  renouvelable: true
+  url: https://particuliers.geg.fr/57-offre-electricite-tarif-bleu-option-verte.htm
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.05
+      abo:
+        9: 141.2
+    - date: 20180408
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 80.76
+        6: 119.04
+        9: 149.04
+        12: 167.52
+        15: 186
+- offre: GEG tarif bleu option verte, HPHC
+  type: hphc
+  renouvelable: true
+  url: https://particuliers.geg.fr/57-offre-electricite-tarif-bleu-option-verte.htm
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.55
+      hp:
+        9: 16.38
+      abo:
+        9: 150.52
+    - date: 20170306
+      hc:
+        9: 11.76
+      hp:
+        9: 15.58
+      abo:
+        9: 128.28
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 132.72
+        9: 171
+        12: 195.12
+        15: 217.44
+        18: 237.96
+- offre: GEG tarif bleu, simple
+  type: base
+  url: https://particuliers.geg.fr/56-offre-electricite-tarif-bleu.htm
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.03
+      abo:
+        9: 117.24
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 111.36
+    - date: 20180408
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+- offre: GEG tarif bleu, HPHC
+  type: hphc
+  url: https://particuliers.geg.fr/56-offre-electricite-tarif-bleu.htm
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.5
+      hp:
+        9: 16.36
+      abo:
+        9: 126.48
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 117.48
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+- offre: GEG offre verte 100% web, base
+  type: base
+  renouvelable: true
+  url: https://particuliers.geg.fr/209-offre-100-verte.htm
+  prix:
+    - date: 20170306
+      hp:
+        9: 13.76
+      abo:
+        9: 135.36
+    - date: 20180408
+      hp:
+        3: 14.96
+        6: 13.81
+        x: 13.95
+      abo:
+        3: 80.76
+        6: 119.04
+        9: 149.04
+        12: 167.52
+        15: 186
+        18: 207.24
+        24: 244.92
+        30: 285.48
+        36: 317.52
+- offre: GEG offre verte 100% web, HPHC
+  type: hphc
+  renouvelable: true
+  url: https://particuliers.geg.fr/209-offre-100-verte.htm
+  prix:
+    - date: 20170306
+      hc:
+        9: 12
+      hp:
+        9: 14.66
+      abo:
+        9: 117.48
+    - date: 20180408
+      hc:
+        x: 11.76
+      hp:
+        x: 14.96
+      abo:
+        6: 132.72
+        9: 171
+        12: 195.12
+        15: 217.44
+        18: 237.96
+        24: 286.08
+        30: 327.96
+        36: 366.6
+
+# GreenYellow
+- offre: GreenYellow, Énergie Connectée, base
+  type: base
+  url: https://www.greenyellow-energie.fr/offres/electricite-verte
+  prix:
+    - date: 20180410
+      hp:
+        3: 14.3
+        6: 13.51
+        x: 13.65
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: GreenYellow, Énergie Connectée, HPHC
+  type: hphc
+  url: https://www.greenyellow-energie.fr/offres/electricite-verte
+  prix:
+    - date: 20180410
+      hc:
+        x: 11.5
+      hp:
+        x: 14.64
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 244.8
+        30: 282.36
+        36: 316.68
+
+# Happ'e
+- offre: Happ'e, simple (1re année)
+  type: base
+  url: https://www.happ-e.fr/offre-electricite
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.03
+      abo:
+        9: 117.2
+    - date: 20170306
+      hp:
+        9: 13.76
+      abo:
+        9: 111.35
+    - date: 20180408
+      hp:
+        6: 14.456
+        x: 14.608
+      abo:
+        6: 107.06
+        9: 125.06
+        12: 143.45
+        15: 161.96
+        18: 183.25
+        24: 220.90
+        30: 261.46
+        36: 293.55
+- offre: Happ'e, simple (2e année)
+  type: base
+  url: https://www.happ-e.fr/offre-electricite
+  prix:
+    - date: 20180408
+      hp:
+        6: 14.672
+        x: 14.828
+      abo:
+        6: 107.06
+        9: 125.06
+        12: 143.45
+        15: 161.96
+        18: 183.25
+        24: 220.90
+        30: 261.46
+        36: 293.55
+- offre: Happ'e, HPHC (1re année)
+  type: hphc
+  url: https://www.happ-e.fr/offre-electricite
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.5
+      hp:
+        9: 16.36
+      abo:
+        9: 126.52
+    - date: 20170306
+      hc:
+        9: 12
+      hp:
+        9: 14.66
+      abo:
+        9: 117.5
+    - date: 20180408
+      hc:
+        x: 12.268
+      hp:
+        x: 15.69
+      abo:
+        6: 120.74
+        9: 146.98
+        12: 171.06
+        15: 193.37
+        18: 213.37
+        24: 244.83
+        30: 282.35
+        36: 316.71
+- offre: Happ'e, HPHC (2e année)
+  type: hphc
+  url: https://www.happ-e.fr/offre-electricite
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.932
+      abo:
+        6: 120.74
+        9: 146.98
+        12: 171.06
+        15: 193.37
+        18: 213.37
+        24: 244.83
+        30: 282.35
+        36: 316.71
+
+# Ilek
+- offre: Ilek le moins cher, base
+  type: base
+  prix:
+    - date: 20170306
+      hp:
+        9: 13.09
+      abo:
+        9: 201.12
+- offre: Ilek le moins cher, HPHC
+  type: hphc
+  prix:
+    - date: 20170306
+      hc:
+        9: 11.83
+      hp:
+        9: 13.63
+      abo:
+        9: 209.76
+- offre: Ilek le plus cher, base
+  type: base
+  prix:
+    - date: 20170306
+      hp:
+        9: 13.45
+      abo:
+        9: 201.12
+- offre: Ilek le plus cher, HPHC
+  type: hphc
+  prix:
+    - date: 20170306
+      hc:
+        9: 12.19
+      hp:
+        9: 13.99
+      abo:
+        9: 209.76
+- offre: Ilek Pyrénées (La Farge), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/1
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.66
+      abo:
+        3: 179.76
+        6: 197.04
+        9: 214.44
+        12: 231.84
+        15: 249.24
+        18: 266.52
+        24: 301.32
+        30: 336
+        36: 370.8
+- offre: Ilek Pyrénées (La Farge), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/1
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.11
+      hp:
+        x: 13.92
+      abo:
+        6: 217.32
+        9: 244.8
+        12: 272.4
+        15: 299.88
+        18: 327.36
+        24: 382.32
+        30: 437.4
+        36: 492.36
+- offre: Ilek Pyrénées (La Freyte), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/2
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.66
+      abo:
+        3: 173.16
+        6: 190.44
+        9: 207.84
+        12: 225.24
+        15: 242.64
+        18: 259.92
+        24: 294.72
+        30: 329.4
+        36: 364.2
+- offre: Ilek Pyrénées (La Freyte), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/2
+  prix:
+    - date: 20180408
+      hc:
+        x: 12.11
+      hp:
+        x: 13.92
+      abo:
+        6: 210.72
+        9: 238.2
+        12: 265.8
+        15: 293.28
+        18: 320.76
+        24: 375.72
+        30: 430.8
+        36: 485.76
+
+- offre: Ilek Roussillon (Treilles), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/8
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.3
+      abo:
+        3: 179.76
+        6: 197.04
+        9: 214.44
+        12: 231.84
+        15: 249.24
+        18: 266.52
+        24: 301.32
+        30: 336
+        36: 370.8
+- offre: Ilek Roussillon (Treilles), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/8
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.75
+      hp:
+        x: 13.56
+      abo:
+        6: 217.32
+        9: 244.8
+        12: 272.4
+        15: 299.88
+        18: 327.36
+        24: 382.32
+        30: 437.4
+        36: 492.36
+
+- offre: Ilek Côte d'Azur (Nice), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/10
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.42
+      abo:
+        3: 179.76
+        6: 197.04
+        9: 214.44
+        12: 231.84
+        15: 249.24
+        18: 266.52
+        24: 301.32
+        30: 336
+        36: 370.8
+- offre: Ilek Côte d'Azur (Nice), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/10
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.87
+      hp:
+        x: 13.68
+      abo:
+        6: 217.32
+        9: 244.8
+        12: 272.4
+        15: 299.88
+        18: 327.36
+        24: 382.32
+        30: 437.4
+        36: 492.36
+- offre: Ilek Yvelines (Méricourt), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/11
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.45
+      abo:
+        3: 179.76
+        6: 197.04
+        9: 214.44
+        12: 231.84
+        15: 249.24
+        18: 266.52
+        24: 301.32
+        30: 336
+        36: 370.8
+- offre: Ilek Yvelines (Méricourt), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/11
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.9
+      hp:
+        x: 13.72
+      abo:
+        6: 217.32
+        9: 244.8
+        12: 272.4
+        15: 299.88
+        18: 327.36
+        24: 382.32
+        30: 437.4
+        36: 492.36
+- offre: Ilek Loire (Decize), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/12
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.3
+      abo:
+        3: 179.76
+        6: 197.04
+        9: 214.44
+        12: 231.84
+        15: 249.24
+        18: 266.52
+        24: 301.32
+        30: 336
+        36: 370.8
+- offre: Ilek Loire (Decize), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/12
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.75
+      hp:
+        x: 13.56
+      abo:
+        6: 217.32
+        9: 244.8
+        12: 272.4
+        15: 299.88
+        18: 327.36
+        24: 382.32
+        30: 437.4
+        36: 492.36
+- offre: Ilek Seine et Marne (Varennes), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/13
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.45
+      abo:
+        3: 179.76
+        6: 197.04
+        9: 214.44
+        12: 231.84
+        15: 249.24
+        18: 266.52
+        24: 301.32
+        30: 336
+        36: 370.8
+- offre: Ilek Seine et Marne (Varennes), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/13
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.9
+      hp:
+        x: 13.72
+      abo:
+        6: 217.32
+        9: 244.8
+        12: 272.4
+        15: 299.88
+        18: 327.36
+        24: 382.32
+        30: 437.4
+        36: 492.36
+- offre: Ilek Bourgogne (Courlon), base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/14
+  prix:
+    - date: 20180408
+      hp:
+        x: 13.36
+      abo:
+        3: 179.76
+        6: 197.04
+        9: 214.44
+        12: 231.84
+        15: 249.24
+        18: 266.52
+        24: 301.32
+        30: 336
+        36: 370.8
+- offre: Ilek Bourgogne (Courlon), HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.ilek.fr/producers/14
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.81
+      hp:
+        x: 13.62
+      abo:
+        6: 217.32
+        9: 244.8
+        12: 272.4
+        15: 299.88
+        18: 327.36
+        24: 382.32
+        30: 437.4
+        36: 492.36
+
+# Lampiris (n'existe plus, devenu Total Spring)
+- offre: Lampiris Base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 13.66
+      abo:
+        9: 117.12
+    - date: 20170306
+      hc:
+        9: 13.54
+      hp:
+        9: 13.54
+      abo:
+        9: 111.36
+- offre: Lampiris, HPHC
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 10.55
+      hp:
+        9: 14.83
+      abo:
+        9: 204.72
+    - date: 20170306
+      hc:
+        9: 11.82
+      hp:
+        9: 14.42
+      abo:
+        9: 117.48
+
+# Lucia Mistral
+- offre: Lucia Mistral, base
+  type: base
+  url: https://www.lucia-energie.fr/fourniture-electricite-particuliers/
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.67
+      abo:
+        9: 117.2
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 111.35
+    - date: 20180408
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 68.88
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Lucia Mistral, HPHC
+  type: hphc
+  url: https://www.lucia-energie.fr/fourniture-electricite-particuliers/
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.14
+      hp:
+        9: 16
+      abo:
+        9: 126.52
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 117.5
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 282.36
+        36: 316.68
+
+# Mint Energie
+- offre: Mint Energie 100% Classic & Green, base
+  type: base
+  renouvelable: true
+  local: true
+  url: https://www.mint-energie.com/Pages/Accueil/accueil.aspx
+  prix:
+    - date: 20180408
+      hp:
+        3: 14.19
+        6: 13.41
+        x: 13.55
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Mint Energie 100% Classic & Green, HPHC
+  type: hphc
+  renouvelable: true
+  local: true
+  url: https://www.mint-energie.com/Pages/Accueil/accueil.aspx
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.43
+      hp:
+        x: 14.53
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+
+# Planète Oui
+- offre: Planète Oui, base
+  type: base
+  renouvelable: true
+  url: https://www.planete-oui.fr/particuliers/offres/electricite-renouvelable
+  prix:
+    - date: 20160327
+      hp:
+        9: 15.03
+      abo:
+        9: 97.2
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 92.76
+    - date: 20180408
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 57.84
+        6: 88.8
+        9: 103.92
+        12: 119.52
+        15: 135.12
+        18: 152.76
+        24: 184.44
+        30: 218.52
+        36: 245.52
+- offre: Planète Oui, HPHC
+  type: hphc
+  renouvelable: true
+  url: https://www.planete-oui.fr/particuliers/offres/electricite-renouvelable
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.5
+      hp:
+        9: 16.36
+      abo:
+        9: 104.88
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 97.8
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 100.8
+        9: 123
+        12: 143.28
+        15: 162.24
+        18: 180.12
+        24: 220.8
+        30: 235.08
+        36: 264.12
+
+# Plüm Énergie
+- offre: Plüm Énergie, base
+  type: base
+  url: https://plum-energie.fr/
+  renouvelable: true
+  local: true
+  prix:
+    - date: 20180410
+      hp:
+        3: 15.08
+        6: 14.24
+        x: 14.38
+      abo:
+        3: 68.88
+        6: 107.04
+        9: 125.04
+        12: 143.02
+        15: 162
+        18: 183.24
+        24: 20.92
+        30: 261.48
+        36: 293.52
+- offre: Plüm Énergie, HPHC
+  type: hphc
+  url: https://plum-energie.fr/
+  renouvelable: true
+  local: true
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.09
+      hp:
+        x: 15.45
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 282.36
+        36: 316.68
+
+
+# Proxelia
+- offre: Proxelia AlpÉnergie, base
+  type: base
+  renouvelable: true
+  url: https://particuliers.proxelia.fr/alpenergie
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.59
+      abo:
+        9: 119.52
+    - date: 20180408
+      hp:
+        3: 15.44
+        6: 14.61
+        x: 14.76
+      abo:
+        3: 68.82
+        6: 107.08
+        9: 125.08
+        12: 143.46
+        15: 161.97
+        18: 183.27
+        24: 220.92
+        30: 261.48
+        36: 293.56
+- offre: Proxelia Alpénergie, heures creuses
+  type: hphc
+  renouvelable: true
+  url: https://particuliers.proxelia.fr/alpenergie
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.24
+      hp:
+        9: 15.86
+      abo:
+        9: 129.09
+    - date: 20180408
+      hc:
+        x: 12.49
+      hp:
+        x: 15.81
+      abo:
+        6: 120.76
+        9: 147
+        12: 171.08
+        15: 193.39
+        18: 213.93
+        24: 262.1
+        30: 303.94
+        36: 342.61
+- offre: Proxelia Domelia, base
+  type: base
+  url: https://particuliers.proxelia.fr/domelia/
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.11
+      abo:
+        9: 112.2
+    - date: 20170306
+      hp:
+        9: 14.09
+      abo:
+        9: 106.68
+    - date: 20180408
+      hp:
+        3: 14.96
+        6: 14.13
+        x: 14.28
+      abo:
+        3: 66.01
+        6: 102.54
+        9: 119.83
+        12: 137.48
+        15: 155.25
+        18: 175.66
+        24: 211.8
+        30: 250.71
+        36: 281.56
+- offre: Proxelia Domelia, heures creuses
+  type: hphc
+  url: https://particuliers.proxelia.fr/domelia/
+  prix:
+    - date: 20160327
+      hc:
+        9: 10.76
+      hp:
+        9: 15.38
+      abo:
+        9: 121.14
+    - date: 20170306
+      hc:
+        9: 12.26
+      hp:
+        9: 15.01
+      abo:
+        9: 112.62
+    - date: 20180408
+      hc:
+        x: 12.01
+      hp:
+        x: 15.33
+      abo:
+        6: 115.76
+        9: 140.98
+        12: 164.15
+        15: 185.64
+        18: 205.44
+        24: 251.79
+        30: 292.12
+        36: 329.44
+
+# Sélia
+- offre: Sélia Integrall, base
+  type: base
+  url: http://www.selia-energies.fr/particuliers/l-offre-classique-pour-les-particuliers/
+  prix:
+    - date: 20180410
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Sélia Integrall, heures creuses
+  type: hphc
+  url: http://www.selia-energies.fr/particuliers/l-offre-classique-pour-les-particuliers/
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+- offre: Sélia Integreen, base
+  type: base
+  url: http://www.selia-energies.fr/particuliers/l-offre-100-verte-pour-les-particuliers/
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hp:
+        3: 15.9
+        6: 15
+        x: 15.16
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Sélia Integreen, heures creuses
+  type: hphc
+  url: http://www.selia-energies.fr/particuliers/l-offre-100-verte-pour-les-particuliers/
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.7
+      hp:
+        x: 16.29
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+
+# Sowee
+- offre: Sowee, base
+  type: base
+  url: https://www.sowee.fr/contrats-energies-gaz-electricite#/paragraph-id-425-anchor
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hp:
+        3: 15.55
+        6: 14.67
+        x: 14.83
+      abo:
+        3: 81.36
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Sowee, HPHC
+  type: hphc
+  url: https://www.sowee.fr/contrats-energies-gaz-electricite#/paragraph-id-425-anchor
+  renouvelable: true
+  prix:
+    - date: 20180410
+      hc:
+        x: 12.44
+      hp:
+        x: 15.93
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+
+# Total Spring
+- offre: Total Spring Électricité verte, base
+  type: base
+  renouvelable: true
+  url: https://www.total-spring.fr/electricite-verte/offres-electricite/offre-electricite-fixe
+  prix:
+    - date: 20180408
+      hp:
+        3: 14.36
+        6: 13.57
+        x: 13.71
+      abo:
+        3: 68.88
+        6: 107.16
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.36
+        24: 220.92
+        30: 261.48
+        36: 293.64
+- offre: Total Spring Électricité verte, HPHC
+  type: hphc
+  renouvelable: true
+  url: https://www.total-spring.fr/electricite-verte/offres-electricite/offre-electricite-fixe
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.56
+      hp:
+        x: 14.71
+      abo:
+        3: 114.96
+        6: 120.84
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+- offre: Total Spring Mobilité verte
+  type: hphc
+  renouvelable: true
+  url: https://www.total-spring.fr/electricite-verte/offre-mobilite-verte
+  note: Cette offre nécessite d'être propriétaire d'un véhicule électrique et d'avoir un compteur communicant Linky
+  prix:
+    - date: 20180408
+      hc:
+        x: 9.89
+      hp:
+        x: 15.93
+      abo:
+        6: 127.08
+        9: 153.36
+        12: 177.36
+        15: 199.68
+        18: 220.32
+        24: 268.44
+        30: 310.32
+        36: 348.96
+
+# UEM
+- offre: UEM élec classique, référence
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.66
+      abo:
+        9: 117.2
+- offre: UEM élec classique, double tarif
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.14
+      hp:
+        9: 16
+      abo:
+        9: 126.52
+- offre: UEM élec vert, référence
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.66
+      abo:
+        9: 117.2
+- offre: UEM élec vert, double tarif
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.14
+      hp:
+        9: 16
+      abo:
+        9: 126.52
+- offre: UEM, base
+  type: base
+  prix:
+    - date: 20160327
+      hp:
+        9: 14.78
+      abo:
+        9: 131.72
+    - date: 20170306
+      hp:
+        9: 14.62
+      abo:
+        9: 126.62
+    - date: 20180408
+      hp:
+        3: 15.55
+        6: 14.68
+        x: 14.83
+      abo:
+        3: 68.82
+        6: 107.08
+        9: 125.08
+        12: 143.46
+        15: 161.97
+        18: 183.26
+        24: 220.92
+        30: 261.48
+        36: 293.56
+- offre: UEM, heures creuses
+  type: hphc
+  prix:
+    - date: 20160327
+      hc:
+        9: 11.25
+      hp:
+        9: 16.11
+      abo:
+        9: 140.22
+    - date: 20170306
+      hc:
+        9: 12.7
+      hp:
+        9: 15.6
+      abo:
+        9: 131.52
+    - date: 20180408
+      hc:
+        x: 12.44
+      hp:
+        x: 15.94
+      abo:
+        6: 120.76
+        9: 146.99
+        12: 171.08
+        15: 193.99
+        18: 213.93
+        24: 262.1
+        30: 303.93
+        36: 342.61
+- offre: UEM, tempo
+  type: tempo
+  prix:
+    - date: 20160327
+      hc:
+        9: 9.41
+      hp:
+        9: 11.21
+      hcbc:
+        9: 13.11
+      hpbc:
+        9: 15.59
+      hcrg:
+        9: 23.76
+      hprg:
+        9: 61.82
+      abo:
+        9: 145.69
+    - date: 20170306
+      hc:
+        9: 10.75
+      hp:
+        9: 12.78
+      hcbc:
+        9: 14
+      hpbc:
+        9: 16.74
+      hcrg:
+        9: 21.61
+      hprg:
+        9: 52.16
+      abo:
+        9: 130.08
+    - date: 20180408
+      hc:
+        x: 11.14
+      hp:
+        x: 13.27
+      hcbc:
+        x: 13.48
+      hpbc:
+        x: 16.3
+      hcrg:
+        x: 17.47
+      hprg:
+        x: 54.83
+      abo:
+        9: 143.45
+        12: 166.77
+        15: 185.92
+        18: 203.05
+        24: 278.06
+        30: 289.76
+        36: 331.72
