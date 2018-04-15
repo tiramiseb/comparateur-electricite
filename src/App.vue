@@ -62,7 +62,7 @@ hr {
                             <li>les tarifs proposés sont comparés en une seule page, un grand tableau concis et complet&nbsp;;</li>
                             <li>l'ensemble des calculs sont effectués sur votre propre machine: aucune information n'est transmise au serveur, aucun cookie n'est installé, aucun "flicage" n'est possible&nbsp;;</li>
                             <li>vous pouvez comparer les tarifs avec votre facture actuelle&nbsp;;</li>
-                            <li>si vous avez des idées ou des besoins, vous pouvez les soumettre &mdash; de même, si vous voulez participer, c'est possible&nbsp;!</li>
+                            <li>si vous avez des idées ou des besoins, vous pouvez les soumettre &mdash; de même, si vous voulez participer, c'est possible, cherchez le menu en bas de l'écran pour en savoir plus&nbsp;!</li>
                           </ul>
                         </v-flex>
                       </v-layout>
@@ -258,6 +258,24 @@ hr {
       </v-content>
     <v-footer fixed app height="auto" class="px-2">
       <span>&copy; 2018 &mdash; Sébastien Maccagnoni</span>
+      <v-spacer/>
+      <v-menu top offset-y transition="slide-y-reverse-transition">
+        <v-btn color="info" slot="activator">Participer</v-btn>
+        <v-list light>
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=erreur">
+            <v-list-tile-title>Signaler une erreur</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=nouveau_fournisseur">
+            <v-list-tile-title>Proposer un nouveau fournisseur</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=nouveau_tarif">
+            <v-list-tile-title>Signaler un changement de tarif</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile href="https://github.com/tiramiseb/comparateur-electricite/issues/new?template=amelioration">
+            <v-list-tile-title>Suggérer une amélioration</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-menu>
     </v-footer>
       <v-snackbar color="error" :timeout="6000" top v-model="erreurChargementYaml">
         La liste de tarifs n'a pas pu être chargée. Veuillez réessayer.
