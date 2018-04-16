@@ -285,6 +285,25 @@
         9: 16.36
       abo:
         9: 126.48
+- offre: Direct Energie Offre Heures Super Creuses
+  type: hphc
+  note: Offre accessible uniquement avec le compteur Linky, incluant 4 heures creuses et 4 heures super creuses - le tarif HC annoncé ici est la moyenne entre les heures creuses (12,38 cts) et super creuses (9,83 cts)
+  url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-heures-super-creuses-electricite
+  prix:
+    - date: 20180416
+      hp:
+        x: 15.88
+      hc:
+        x: 11.105
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 244.8
+        30: 282.36
+        36: 316.68
 - offre: Direct Energie Online, base
   type: base
   url: https://www.direct-energie.com/particuliers/electricite/offres-d-electricite/offre-online-electricite
