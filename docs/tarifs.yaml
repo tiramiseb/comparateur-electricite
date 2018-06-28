@@ -2464,11 +2464,11 @@
   local: true
   url: https://www.mint-energie.com/Pages/Accueil/accueil.aspx
   prix:
-    - date: 20180408
+    - date: 20180628
       hp:
-        3: 14.19
-        6: 13.41
-        x: 13.55
+        3: 14.55
+        6: 13.74
+        x: 13.88
       abo:
         3: 68.76
         6: 107.04
@@ -2487,9 +2487,52 @@
   prix:
     - date: 20180408
       hc:
-        x: 11.43
+        x: 11.68
       hp:
-        x: 14.53
+        x: 14.90
+      abo:
+        6: 120.72
+        9: 147
+        12: 171.12
+        15: 193.44
+        18: 213.96
+        24: 262.08
+        30: 303.96
+        36: 342.6
+- offre: Mint Energie 100% Online & Green, base
+  type: base
+  renouvelable: true
+  local: false
+  note: Cette offre inclut de l'électricité française et danoise
+  url: https://www.mint-energie.com/Pages/Accueil/accueil.aspx
+  prix:
+    - date: 20180628
+      hp:
+        3: 13.73
+        6: 12.98
+        x: 13.11
+      abo:
+        3: 68.76
+        6: 107.04
+        9: 125.04
+        12: 143.52
+        15: 162
+        18: 183.24
+        24: 220.92
+        30: 261.48
+        36: 293.52
+- offre: Mint Energie 100% Online & Green, HPHC
+  type: hphc
+  renouvelable: true
+  local: false
+  note: Cette offre inclut de l'électricité française et danoise
+  url: https://www.mint-energie.com/Pages/Accueil/accueil.aspx
+  prix:
+    - date: 20180408
+      hc:
+        x: 11.08
+      hp:
+        x: 14.05
       abo:
         6: 120.72
         9: 147
