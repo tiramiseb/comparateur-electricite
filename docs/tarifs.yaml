@@ -2437,7 +2437,7 @@
           30: 283.8
           36: 320.28
 - offre: Leclerc, HPHC, remise 20% sur carte Leclerc
-  type: base
+  type: hphc
   url: https://www.energies.leclerc/offre-electricite
   note: Le prix indiqué inclut les remises sur la carte Leclerc
   renouvelable: true
@@ -2457,7 +2457,7 @@
           30: 299.52
           36: 337.56
 - offre: Leclerc, HPHC, remise 10% immédiate
-  type: base
+  type: hphc
   url: https://www.energies.leclerc/offre-electricite
   renouvelable: true
   prix:
