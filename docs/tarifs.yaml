@@ -2399,6 +2399,7 @@
   type: base
   url: https://www.energies.leclerc/offre-electricite
   note: Le prix indiqué inclut les remises sur la carte Leclerc
+  renouvelable: true
   prix:
       - date: 20180914
         hp:
@@ -2418,6 +2419,7 @@
 - offre: Leclerc, base, remise 10% immédiate
   type: base
   url: https://www.energies.leclerc/offre-electricite
+  renouvelable: true
   prix:
       - date: 20180914
         hp:
@@ -2438,6 +2440,7 @@
   type: base
   url: https://www.energies.leclerc/offre-electricite
   note: Le prix indiqué inclut les remises sur la carte Leclerc
+  renouvelable: true
   prix:
       - date: 20180914
         hp:
@@ -2456,7 +2459,7 @@
 - offre: Leclerc, HPHC, remise 10% immédiate
   type: base
   url: https://www.energies.leclerc/offre-electricite
-  note: Le prix indiqué inclut les remises sur la carte Leclerc
+  renouvelable: true
   prix:
       - date: 20180914
         hp:
