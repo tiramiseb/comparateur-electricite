@@ -2394,6 +2394,86 @@
       abo:
         9: 117.48
 
+# Leclerc
+- offre: Leclerc, base, remise 20% sur carte Leclerc
+  type: base
+  url: https://www.energies.leclerc/offre-electricite
+  note: Le prix indiqué inclut les remises sur la carte Leclerc
+  prix:
+      - date: 20180914
+        hp:
+          3: 12.72
+          6: 12.72
+          x: 12.87
+        abo:
+          3: 92.92
+          6: 110.52
+          9: 130.32
+          12: 150.96
+          15: 170.88
+          18: 191.52
+          24: 237.72
+          30: 283.8
+          36: 320.28
+- offre: Leclerc, base, remise 10% immédiate
+  type: base
+  url: https://www.energies.leclerc/offre-electricite
+  prix:
+      - date: 20180914
+        hp:
+          3: 13.44
+          6: 13.44
+          x: 13.59
+        abo:
+          3: 92.92
+          6: 110.52
+          9: 130.32
+          12: 150.96
+          15: 170.88
+          18: 191.52
+          24: 237.72
+          30: 283.8
+          36: 320.28
+- offre: Leclerc, HPHC, remise 20% sur carte Leclerc
+  type: base
+  url: https://www.energies.leclerc/offre-electricite
+  note: Le prix indiqué inclut les remises sur la carte Leclerc
+  prix:
+      - date: 20180914
+        hp:
+          x: 13.8
+        hc:
+          x: 10.87
+        abo:
+          6: 119.52
+          9: 145.2
+          12: 169.08
+          15: 191.16
+          18: 211.32
+          24: 258.24
+          30: 299.52
+          36: 337.56
+- offre: Leclerc, HPHC, remise 10% immédiate
+  type: base
+  url: https://www.energies.leclerc/offre-electricite
+  note: Le prix indiqué inclut les remises sur la carte Leclerc
+  prix:
+      - date: 20180914
+        hp:
+          x: 14.59
+        hc:
+          x: 11.44
+        abo:
+          6: 119.52
+          9: 145.2
+          12: 169.08
+          15: 191.16
+          18: 211.32
+          24: 258.24
+          30: 299.52
+          36: 337.56
+
+
 # Lucia Mistral
 - offre: Lucia Mistral, base
   type: base
